@@ -3,7 +3,9 @@ import "./header.css";
 function Header() {
   return (
     <header className="flex">
+      <button className="menu">Show modal</button>
       <div />
+
       <nav>
         <ul className="flex">
           <li>
@@ -24,7 +26,14 @@ function Header() {
           </li>
         </ul>
       </nav>
+
       <button>light</button>
+
+
+
+<div className="border fixed">
+
+</div>
     </header>
   );
 }

@@ -23,12 +23,33 @@ header ul li a {
 }
 
 header ul li a:hover {
-    color: var(--blue);
-    opacity: 1;
-    font-size: 0.91rem;
-    font-weight: 500;
-  }
+  color: var(--blue);
+  opacity: 1;
+  font-size: 0.91rem;
+  font-weight: 500;
+}
 
 header button {
   font-size: 1.2rem;
+}
+
+header button.menu {
+  display: none;
+}
+
+/* Modal == pop up */
+header .fixed{
+  inset: 0;
+  position: fixed;
+  background-color: rgba(41, 41, 49, 0.92);
+}
+
+@media (max-width: 700px) {
+  header.flex nav {
+    display: none;
+  }
+
+  header button.menu {
+    display: block;
+  }
 }
