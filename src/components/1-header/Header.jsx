@@ -9,10 +9,8 @@ function Header() {
         onClick={() => {
           setshowModal(true);
         }}
-        className="menu"
-      >
-        Show modal
-      </button>
+        className="menu icon-menu flex"
+      ></button>
       <div />
 
       <nav>
@@ -36,13 +34,20 @@ function Header() {
         </ul>
       </nav>
 
-      <button>light</button>
+      <button className="mode flex">
+        <span className="icon-moon-o"></span>
+      </button>
 
       {showModal && (
         <div className="fixed">
           <ul className="modal">
             <li>
-              <button onClick={() => { setshowModal(false) }}>close</button>
+              <button
+                className="icon-close"
+                onClick={() => {
+                  setshowModal(false);
+                }}
+              />
             </li>
             <li>
               <a href="">About</a>
