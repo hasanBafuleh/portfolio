@@ -74,13 +74,14 @@ header button.mode:hover {
   border: 1px solid rgb(250, 128, 114);
 }
 
-header .icon-close {
-  font-size: 1.1rem;
+header .icon-clear {
+  font-size: 1.3rem;
   color: var(--subtitle);
+  transition: 0.3s;
 }
 
-header .icon-close:hover {
-  font-size: 1.3rem;
+header .icon-clear:hover {
+  font-size: 1.5rem;
   color: crimson;
   transition: 0.3s;
   rotate: 90deg;
@@ -110,7 +111,7 @@ header .fixed {
 
 header .fixed ul.modal {
   animation: transition 0.6s 1;
-  width: 85%;
+  width: 75%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 2rem;
@@ -130,10 +131,8 @@ header .fixed ul.modal li:first-child {
   border: none;
   padding-bottom: 0;
   padding-top: 0.15rem;
-}
+  margin-bottom: -1rem;
 
-header .fixed ul.modal li:nth-child(2) {
-  padding-top: 0;
 }
 
 header .fixed ul.modal li:last-child {

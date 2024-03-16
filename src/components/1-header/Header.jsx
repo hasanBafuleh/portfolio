@@ -43,7 +43,7 @@ function Header() {
           <ul className="modal">
             <li>
               <button
-                className="icon-close"
+                className="icon-clear"
                 onClick={() => {
                   setshowModal(false);
                 }}
