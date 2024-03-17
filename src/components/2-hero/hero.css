@@ -1,0 +1,12 @@
+section.hero {
+  margin-top: 3rem;
+}
+section.hero .left-section {
+  flex-grow: 1;
+}
+
+section.hero .avatar{
+    width: 90px;
+    border-radius: 50%;
+    border: 1px solid rgb(197,72,85);
+}
