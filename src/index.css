@@ -38,6 +38,10 @@ html {
 
   --bgHeader: rgb(39, 39, 42);
   --blue: rgb(93, 188, 252);
+
+  --icon-hover: #d4d4d8;
+
+  --container-padding: 4.5rem;
 }
 
 .light {
@@ -54,12 +58,14 @@ body {
   margin-left: auto;
   margin-right: auto;
   background-color: var(--secondary);
-  padding: 0 4.5rem;
+  padding: 0 var(--container-padding);
 }
 
 .divider {
   border-bottom: 1px solid var(--border);
   margin: 3rem 0;
+  width: calc(100% + var(--container-padding) + var(--container-padding));
+  margin-left: calc(var(--container-padding)* -1);
 }
 
 li {
@@ -95,14 +101,19 @@ button:active {
 
 @media (max-width: 1000px) {
   .container {
+    --container-padding: 1.6rem;
     width: 90%;
-    padding: 1.6rem;
+    padding: var(--container-padding);
+  }
+  .divider {
+    width: calc(100% + var(--container-padding) + var(--container-padding));
+    margin-left: calc(var(--container-padding)* -1);
   }
 }
 
 @media (max-width: 600px) {
   .container {
     width: 98%;
-    padding: 1.6rem;
+    padding: var(--container-padding);
   }
 }

@@ -4,7 +4,7 @@ import "./hero.css";
 function Hero() {
   return (
     <section className="hero flex">
-      <div className="left-section border">
+      <div className="left-section ">
         <div className="main-avatar flex">
           <img src="./personalPic.png" className="avatar" alt="" />
           <div className="icon-verified"></div>
