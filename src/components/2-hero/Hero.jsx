@@ -10,13 +10,19 @@ function Hero() {
           <div className="icon-verified"></div>
         </div>
 
-        <h1 className="title">Software Engineer, Full Stack</h1>
-        <p className="sub-title">I'm Hasan Bafuleh</p>
+        <h1 className="title">
+          Software Engineer, <br /> Full Stack
+        </h1>
+        <p className="sub-title">
+          I'm Hasan Bafuleh Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Exercitationem ipsum mollitia quaerat minus aspernatur aliquid.
+          Dignissimos distinctio quasi a praesentium harum assumenda.
+        </p>
 
-        <div className="icons flex">
-          <div className="icon-twitter"></div>
-          <div className="icon-linkedin"></div>
-          <div className="icon-github"></div>
+        <div className="all-icons flex">
+          <div className="icon icon-twitter"></div>
+          <div className="icon icon-linkedin"></div>
+          <div className="icon icon-github"></div>
         </div>
       </div>
 

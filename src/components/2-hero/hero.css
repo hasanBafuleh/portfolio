@@ -36,8 +36,35 @@ section.hero .avatar {
   padding: 1px;
 }
 
-section.hero .intro{
-    display: flex;
+section.hero .intro {
+  display: flex;
+}
+
+section.hero h1.title {
+  font-size: 2.85rem;
+  line-height: 3.3rem;
+  margin: 24px 0;
+  color: var(--title);
+}
+
+section.hero p.sub-title {
+  color: var(--subtitle);
+  font-size: 0.9rem;
+  line-height: 1.65rem;
+  margin-bottom: 30px;
+}
+
+section.hero .all-icons {
+  font-size: 1rem;
+  gap: 1.5rem;
+  color: var(--subtitle);
+}
+
+section.hero .all-icons .icon:hover {
+  font-size: 1.3rem;
+  transition: 0.3s;
+  cursor: pointer;
+  color: ;
 }
 
 /* ===============
