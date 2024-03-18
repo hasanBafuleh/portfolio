@@ -95,6 +95,7 @@ header .fixed {
   z-index: 11;
   position: fixed;
   background-color: rgba(41, 41, 49, 0.92);
+  backdrop-filter: blur(4px);
 }
 
 @keyframes transition {
