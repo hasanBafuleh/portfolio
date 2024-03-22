@@ -33,7 +33,7 @@ main section.left-section button {
 }
 
 main section.left-section button:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 main section.left-section button.active {
@@ -45,9 +45,57 @@ main section.left-section button.active {
 }
 
 /* ===============
-   1. Right Section (Projects)
+   2. Right Section (Projects)
 ================== */
 
 main section.right-section {
-  flex-grow: 1;
+  /* flex-grow: 1; */
+}
+
+.card {
+  border: 1px solid rgb(93, 188, 252, 0.3);
+}
+
+.card:hover {
+  border: 1px solid var(--blue);
+}
+
+.card .box {
+  padding: 1rem 0.4rem;
+}
+
+.card .box .title {
+  margin-top: -0.5rem;
+  color: var(--title);
+}
+
+.card .box .sub-title {
+  color: var(--subtitle);
+  font-size: 0.8rem;
+  margin-top: 0.7rem;
+  margin-bottom: 0.8rem;
+}
+
+.card .box .icons {
+  justify-content: space-between;
+}
+
+.card .icon-link,
+.card .icon-github {
+  font-size: 1.2rem;
+  color: var(--subtitle);
+}
+
+.card .icon-link:hover,
+.card .icon-github:hover {
+  font-size: 1.5rem;
+  color: var(--icon-hover);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.card a.link {
+  font-size: 0.95rem;
+  color: var(--blue);
+  margin-right: 12px;
 }
