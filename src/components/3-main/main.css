@@ -4,6 +4,7 @@
  
 1. Left Section (List)
 2. Right Section (Projects)
+3. Responsive Design (media query)
 */
 
 main.flex {
@@ -11,9 +12,9 @@ main.flex {
   align-items: start;
 }
 
-/* ===============
+/* ======================
    1. Left Section (List)
-================== */
+====================== */
 
 main section.left-section {
   flex-direction: column;
@@ -44,9 +45,9 @@ main section.left-section button.active {
   border: 1px solid var(--blue);
 }
 
-/* ===============
+/* ===========================
    2. Right Section (Projects)
-================== */
+=========================== */
 
 main section.right-section.flex {
   /* flex-grow: 1; */
@@ -121,6 +122,10 @@ main section.right-section.flex {
   color: var(--blue);
   margin-right: 12px;
 }
+
+/* ==================================
+   3. Responsive Design (media query)
+================================== */
 
 @media (max-width: 600px) {
   main.flex {
