@@ -41,7 +41,7 @@ html {
 
   --icon-hover: #d4d4d8;
 
-  --container-padding: 4.5rem;
+  --container-padding: 3rem;
 }
 
 .light {
@@ -54,7 +54,7 @@ body {
 
 .container {
   border: 2px solid var(--border);
-  width: 80%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
   background-color: var(--secondary);
@@ -65,7 +65,7 @@ body {
   border-bottom: 1px solid var(--border);
   margin: 3rem 0;
   width: calc(100% + var(--container-padding) + var(--container-padding));
-  margin-left: calc(var(--container-padding)* -1);
+  margin-left: calc(var(--container-padding) * -1);
 }
 
 li {
@@ -107,7 +107,7 @@ button:active {
   }
   .divider {
     width: calc(100% + var(--container-padding) + var(--container-padding));
-    margin-left: calc(var(--container-padding)* -1);
+    margin-left: calc(var(--container-padding) * -1);
   }
 }
 
