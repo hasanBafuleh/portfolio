@@ -28,7 +28,6 @@ main section.left-section button {
   text-align: center;
   opacity: 0.5;
   font-size: 1.07rem;
-  text-transform: capitalize;
   border-radius: 5px;
   transition: 0.3s;
 }

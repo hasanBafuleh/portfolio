@@ -1,29 +1,69 @@
-import React from "react";
+import { useState } from "react";
 import "./main.css";
 
+const myProjects = [
+  { projectTitle: "Promptopia", category: "react&next", imgPath: "a" },
+  { projectTitle: "Movies Harbor", category: "React", imgPath: "b" },
+];
 function Main() {
+  const [currentActive, setcurrentActive] = useState("all");
   return (
     <main className="flex">
       <section className="flex left-section">
-        <button className="active">All Projects</button>
-        <button>HTML & CSS</button>
-        <button>JavaScript</button>
-        <button>React & Next</button>
-        <button>Node & Express</button>
+        <button
+          onClick={() => {
+            setcurrentActive("all");
+          }}
+          className={currentActive === "all" ? "active" : null}
+        >
+          All Projects
+        </button>
+        <button
+          onClick={() => {
+            setcurrentActive("React");
+          }}
+          className={currentActive === "React" ? "active" : null}
+        >
+          React
+        </button>
+        <button
+          onClick={() => {
+            setcurrentActive("react&next");
+          }}
+          className={currentActive === "react&next" ? "active" : null}
+        >
+          React & Next.js
+        </button>
+        <button
+          onClick={() => {
+            setcurrentActive("Angular");
+          }}
+          className={currentActive === "Angular" ? "active" : null}
+        >
+          Angular
+        </button>
+        <button
+          onClick={() => {
+            setcurrentActive("Angular&.NET");
+          }}
+          className={currentActive === "Angular&.NET" ? "active" : null}
+        >
+          Angular & .NET
+        </button>
       </section>
 
       <section className="flex right-section">
-        {["aa", "bb", "cc", 2, 3].map((item) => {
+        {myProjects.map((item) => {
           return (
-            <article key={item} className="card">
+            <article key={item.imgPath} className="card">
               <img
                 width={270}
                 style={{ padding: "0.2rem" }}
-                src="./Promptopia.png"
+                src={item.imgPath}
                 alt=""
               />
               <div style={{ width: "270px" }} className=" box">
-                <h1 className="title">Propmtopia</h1>
+                <h1 className="title">{item.projectTitle}</h1>
                 <p className="sub-title">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Libero nihil officiis minus repudiandae eius maxime laborum,
