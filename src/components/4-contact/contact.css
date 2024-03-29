@@ -7,7 +7,6 @@
 3. Responsive Design (media query)
 */
 
-
 /* ======================
    1. Left Section (form)
 ====================== */
@@ -47,16 +46,26 @@ section.contact-us #message {
   font-size: 1.1rem;
 }
 
-section.contact-us #email:focus,
-section.contact-us #message:focus {
-  border: 1px solid var(--blue);
+.light section.contact-us #email,
+.light section.contact-us #message {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(128, 128, 128, 0.45);
+  box-shadow: 1px 1px 1px rgb(73, 73, 75, 0.1);
+  color: rgb(35, 35, 36);
 }
-
+section.contact-us #email:focus,
+section.contact-us #message:focus,
 section.contact-us #email:hover,
 section.contact-us #message:hover {
   border: 1px solid var(--blue);
 }
 
+.light section.contact-us #email:focus,
+.light section.contact-us #message:focus,
+.light section.contact-us #email:hover,
+.light section.contact-us #message:hover {
+  border: 1px solid rgb(67, 67, 67);
+}
 section.contact-us #message {
   min-height: 9rem;
   resize: vertical;
@@ -83,7 +92,6 @@ section.contact-us .submit:hover {
 /* ============================
    2. Right Section (animation)
 ============================ */
-
 
 /* ==================================
    3. Responsive Design (media query)

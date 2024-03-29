@@ -44,6 +44,10 @@ main section.left-section button.active {
   border: 1px solid var(--blue);
 }
 
+.light main section.left-section button.active {
+  border: 1px solid #000;
+}
+
 /* ===========================
    2. Right Section (Projects)
 =========================== */
@@ -70,6 +74,14 @@ main section.right-section.flex {
   border: 1px solid var(--blue);
   scale: 1.03;
   cursor: pointer;
+}
+
+.light .card {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.light .card:hover {
+  border: 1px solid rgb(67, 67, 67);
+  background-color: rgb(233, 233, 233);
 }
 
 .card img {
