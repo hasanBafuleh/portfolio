@@ -2,17 +2,32 @@ import { useState } from "react";
 import "./main.css";
 
 const myProjects = [
-  { projectTitle: "Promptopia", category: "react&next", imgPath: "a" },
-  { projectTitle: "Movies Harbor", category: "React", imgPath: "b" },
+  { projectTitle: "Promptopia", category: ["react&next"], imgPath: "./Promptopia.png" },
+  { projectTitle: "Movies Harbor", category: ["React"], imgPath: "b" },
 ];
 function Main() {
   const [currentActive, setcurrentActive] = useState("all");
+  const [arr, setarr] = useState(myProjects);
+
+  const handleClick = (buttonCategory) => {
+    setcurrentActive(buttonCategory);
+
+    const newArr = myProjects.filter((item) => {
+      const cArr = item.category.filter((myItem) => {
+        return myItem === buttonCategory;
+      });
+      return cArr[0] === buttonCategory;
+    });
+    setarr(newArr);
+  };
+
   return (
     <main className="flex">
       <section className="flex left-section">
         <button
           onClick={() => {
             setcurrentActive("all");
+            setarr(myProjects);
           }}
           className={currentActive === "all" ? "active" : null}
         >
@@ -20,7 +35,7 @@ function Main() {
         </button>
         <button
           onClick={() => {
-            setcurrentActive("React");
+            handleClick("React");
           }}
           className={currentActive === "React" ? "active" : null}
         >
@@ -28,7 +43,7 @@ function Main() {
         </button>
         <button
           onClick={() => {
-            setcurrentActive("react&next");
+            handleClick("react&next");
           }}
           className={currentActive === "react&next" ? "active" : null}
         >
@@ -36,7 +51,7 @@ function Main() {
         </button>
         <button
           onClick={() => {
-            setcurrentActive("Angular");
+            handleClick("Angular");
           }}
           className={currentActive === "Angular" ? "active" : null}
         >
@@ -44,7 +59,7 @@ function Main() {
         </button>
         <button
           onClick={() => {
-            setcurrentActive("Angular&.NET");
+            handleClick("Angular&.NET");
           }}
           className={currentActive === "Angular&.NET" ? "active" : null}
         >
@@ -53,7 +68,7 @@ function Main() {
       </section>
 
       <section className="flex right-section">
-        {myProjects.map((item) => {
+        {arr.map((item) => {
           return (
             <article key={item.imgPath} className="card">
               <img
