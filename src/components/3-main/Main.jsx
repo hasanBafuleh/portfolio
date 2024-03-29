@@ -1,10 +1,8 @@
 import { useState } from "react";
 import "./main.css";
+import { myProjects } from "./myProjects";
 
-const myProjects = [
-  { projectTitle: "Promptopia", category: ["react&next"], imgPath: "./Promptopia.png" },
-  { projectTitle: "Movies Harbor", category: ["React"], imgPath: "b" },
-];
+
 function Main() {
   const [currentActive, setcurrentActive] = useState("all");
   const [arr, setarr] = useState(myProjects);

@@ -49,7 +49,7 @@ main section.left-section button.active {
 =========================== */
 
 main section.right-section.flex {
-  /* flex-grow: 1; */
+  flex-grow: 1;
   justify-content: center;
   flex-wrap: wrap;
   column-gap: 8px;
