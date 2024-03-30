@@ -1,18 +1,32 @@
-import React from "react";
 import "./hero.css";
+import Lottie from "lottie-react";
+import softwareEnAnimation from "../..//animation/softwareEngineer.json";
+import { motion } from "framer-motion";
 
 function Hero() {
   return (
     <section className="hero flex">
       <div className="left-section ">
         <div className="main-avatar flex">
-          <img src="./personalPic.png" className="avatar" alt="" />
+          <motion.img
+            initial={{ transform: "scale(0)" }}
+            animate={{ transform: "scale(1.1)" }}
+            transition={{ damping: 10, type: "spring", stiffness: 100 }}
+            src="./personalPic.png"
+            className="avatar"
+            alt=""
+          />
           <div className="icon-verified"></div>
         </div>
 
-        <h1 className="title">
+        <motion.h1
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 2 }}
+          className="title"
+        >
           Software Engineer, <br /> Full Stack
-        </h1>
+        </motion.h1>
         <p className="sub-title">
           I'm Hasan Bafuleh Lorem ipsum dolor sit amet consectetur adipisicing
           elit. Exercitationem ipsum mollitia quaerat minus aspernatur aliquid.
@@ -26,7 +40,9 @@ function Hero() {
         </div>
       </div>
 
-      <div className="right-section animation border">animation</div>
+      <div className="right-section animation">
+        <Lottie animationData={softwareEnAnimation} />
+      </div>
     </section>
   );
 }
