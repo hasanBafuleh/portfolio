@@ -4,6 +4,10 @@ import softwareEnAnimation from "../..//animation/softwareEngineer.json";
 import { motion } from "framer-motion";
 
 function Hero() {
+  const titleText = "Software Engineer, Full Stack";
+  const subText =
+    "I'm Hasan Bafuleh Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ipsum mollitia quaerat minus aspernatur aliquid. Dignissimos distinctio quasi a praesentium harum assumenda.";
+
   return (
     <section className="hero flex">
       <div className="left-section ">
@@ -25,13 +29,35 @@ function Hero() {
           transition={{ duration: 2 }}
           className="title"
         >
-          Software Engineer, <br /> Full Stack
+          {titleText.split(" ").map((el, i) => (
+            <motion.span
+              key={i}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.25, delay: i / 7 }}
+            >
+              {el}{" "}
+            </motion.span>
+          ))}
         </motion.h1>
-        <p className="sub-title">
-          I'm Hasan Bafuleh Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Exercitationem ipsum mollitia quaerat minus aspernatur aliquid.
-          Dignissimos distinctio quasi a praesentium harum assumenda.
-        </p>
+
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 2 }}
+          className="sub-title"
+        >
+          {subText.split(" ").map((el, i) => (
+            <motion.span
+              key={i}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.25, delay: i / 14 }}
+            >
+              {el}{" "}
+            </motion.span>
+          ))}
+        </motion.p>
 
         <div className="all-icons flex">
           <div className="icon icon-twitter"></div>
