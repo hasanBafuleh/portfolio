@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 function Hero() {
   const titleText = "Software Engineer, Full Stack";
   const subText =
-    "I'm Hasan Bafuleh Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ipsum mollitia quaerat minus aspernatur aliquid. Dignissimos distinctio quasi a praesentium harum assumenda.";
+    "I'm Hasan Bafuleh, a results-driven Software Engineer with an Associate Degree in Computer Science. My journey in software development has equipped me with a strong foundation in coding and efficient algorithms, making me well-prepared for new challenges in the tech industry. Eager to contribute to innovative projects, I actively engage in developing full-stack web applications using HTML, CSS, JavaScript, React, Node.js, Express.js, MongoDB, and Next.js. Furthermore, I possess experience in creating applications with Flutter..";
 
   return (
     <section className="hero flex">
@@ -18,7 +18,8 @@ function Hero() {
             transition={{ damping: 10, type: "spring", stiffness: 100 }}
             src="./graduationPic.png"
             className="avatar"
-            alt=""
+            id="avatar"
+            alt="Personal picture"
           />
           <div className="icon-verified"></div>
         </div>
@@ -61,8 +62,22 @@ function Hero() {
 
         <div className="all-icons flex">
           <div className="icon icon-twitter"></div>
-          <div className="icon icon-linkedin"></div>
-          <div className="icon icon-github"></div>
+          <a
+            href="https://www.linkedin.com/in/hasan-bafuleh/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="all-icons"
+          >
+            <div className="icon icon-linkedin"></div>
+          </a>
+          <a
+          href="https://github.com/hasanBafuleh"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="all-icons"
+          >
+            <div className="icon icon-github"></div>
+          </a>
         </div>
       </div>
 

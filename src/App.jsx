@@ -20,14 +20,17 @@ function App() {
     <div id="up" className="container">
       <Header />
       <Hero />
-      <div className="divider" />
+      <div className="divider" id="projects" />
       <Main />
-      <div className="divider" />
+      <div className="divider" id="contact"/>
       <Contact />
       <div className="divider" />
       <Footer />
 
-      <a style={{ opacity: showScrollBtn? 1 : 0, transition: "1s" }} href="#up">
+      <a
+        style={{ opacity: showScrollBtn ? 1 : 0, transition: "1s" }}
+        href="#up"
+      >
         <button className="icon-keyboard_arrow_up scrollUp"></button>
       </a>
     </div>

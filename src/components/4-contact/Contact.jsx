@@ -11,11 +11,10 @@ function Contact() {
     <section className="contact-us">
       <h1 className="title">
         <span className="icon-envelope"></span>
-        Contact us
+        Contact me
       </h1>
       <p className="sub-title">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere laborum
-        nulla corporis veritatis temporibus accusantium
+      Whether it's a project proposal or just saying hello, I'd love to hear from you!
       </p>
 
       <div style={{ justifyContent: "space-between" }} className="flex">
