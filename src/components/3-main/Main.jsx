@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./main.css";
 import { myProjects } from "./myProjects";
-
+import { AnimatePresence, motion } from "framer-motion";
 
 function Main() {
   const [currentActive, setcurrentActive] = useState("all");
@@ -66,39 +66,48 @@ function Main() {
       </section>
 
       <section className="flex right-section">
-        {arr.map((item) => {
-          return (
-            <article key={item.imgPath} className="card">
-              <img
-                width={270}
-                style={{ padding: "0.2rem" }}
-                src={item.imgPath}
-                alt=""
-              />
-              <div style={{ width: "270px" }} className=" box">
-                <h1 className="title">{item.projectTitle}</h1>
-                <p className="sub-title">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Libero nihil officiis minus repudiandae eius maxime laborum,
-                  ex tempora similique nam nobis veniam pariatur
-                </p>
-                <div className="flex icons">
-                  <div style={{ gap: "0.5rem" }} className="flex source">
-                    <div className="icon-link"></div>
-                    <div className="icon-github"></div>
+        <AnimatePresence>
+          {arr.map((item) => {
+            return (
+              <motion.article
+                layout
+                initial={{ transform: "scale(0)" }}
+                animate={{ transform: "scale(1)" }}
+                transition={{ type: "spring", damping: 8, stiffness: 100 }}
+                key={item.imgPath}
+                className="card"
+              >
+                <img
+                  width={270}
+                  style={{ padding: "0.2rem" }}
+                  src={item.imgPath}
+                  alt=""
+                />
+                <div style={{ width: "270px" }} className=" box">
+                  <h1 className="title">{item.projectTitle}</h1>
+                  <p className="sub-title">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Libero nihil officiis minus repudiandae eius maxime laborum,
+                    ex tempora similique nam nobis veniam pariatur
+                  </p>
+                  <div className="flex icons">
+                    <div style={{ gap: "0.5rem" }} className="flex source">
+                      <div className="icon-link"></div>
+                      <div className="icon-github"></div>
+                    </div>
+                    <a className="link flex" href="">
+                      more
+                      <span
+                        style={{ alignSelf: "end" }}
+                        className="icon-arrow-right"
+                      ></span>
+                    </a>
                   </div>
-                  <a className="link flex" href="">
-                    more
-                    <span
-                      style={{ alignSelf: "end" }}
-                      className="icon-arrow-right"
-                    ></span>
-                  </a>
                 </div>
-              </div>
-            </article>
-          );
-        })}
+              </motion.article>
+            );
+          })}
+        </AnimatePresence>
       </section>
     </main>
   );
