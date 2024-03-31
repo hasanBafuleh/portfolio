@@ -17,7 +17,7 @@ function Footer() {
         </li>
       </ul>
 
-      <p>© 2024 Spencer Sharp. All rights reserved.</p>
+      <p>© 2023 Spencer Sharp. All rights reserved.</p>
     </footer>
   );
 }
