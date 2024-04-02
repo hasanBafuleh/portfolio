@@ -79,19 +79,43 @@ function Header() {
               />
             </li>
             <li>
-              <a href="">About</a>
+              <a
+                onClick={() => {
+                  setshowModal(false);
+                }}
+                href="#avatar"
+              >
+                About
+              </a>
             </li>
-            <li>
+            {/* <li>
               <a href="">Articles</a>
-            </li>
+            </li> */}
             <li>
-              <a href="">Projects</a>
+              <a
+                onClick={() => {
+                  setshowModal(false);
+                }}
+                href="#projects"
+              >
+                Projects
+              </a>
             </li>
-            <li>
+            {/* <li>
               <a href="">Speaking</a>
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               <a href="">Uses</a>
+            </li> */}
+            <li>
+              <a
+                onClick={() => {
+                  setshowModal(false);
+                }}
+                href="#contact"
+              >
+                Contact
+              </a>
             </li>
           </ul>
         </div>
