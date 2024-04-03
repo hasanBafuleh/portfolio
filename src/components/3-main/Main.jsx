@@ -95,7 +95,7 @@ function Main() {
                         <div className="icon-github"></div>
                       </a>
                     </div>
-                    <a className="link flex" href="">
+                    <a className="link flex" href={item.link} target="_blank">
                       more
                       <span
                         style={{ alignSelf: "end" }}
