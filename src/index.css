@@ -26,6 +26,8 @@ html {
   box-sizing: inherit;
 }
 
+/* root css */
+
 :root {
   --primary: #000;
   --secondary: rgb(24, 24, 27);
