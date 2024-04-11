@@ -16,7 +16,7 @@ function Footer() {
           <a href="#contact">Contact</a>
         </li>
       </ul>
-      {/* © 2023 Spencer All rights reserved.*/}
+      {/* © 2023 Spencer Sharp. All rights reserved.*/}
       <p>© 2023 Spencer Sharp. All rights reserved.</p>
     </footer>
   );
