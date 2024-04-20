@@ -167,7 +167,7 @@ button.disabled{
     width: 98%;
     padding: var(--container-padding);
   }
-
+/* // comment */
   .scrollUp {
     width: 2.2rem;
     height: 2.2rem;
