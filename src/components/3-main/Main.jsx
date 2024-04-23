@@ -47,7 +47,7 @@ function Main() {
         >
           React & Next.js
         </button>
-        <button
+        {/* <button
           onClick={() => {
             handleClick("Angular");
           }}
@@ -62,7 +62,7 @@ function Main() {
           className={currentActive === "Angular&.NET" ? "active" : null}
         >
           Angular & .NET
-        </button>
+        </button> */}
       </section>
 
       <section className="flex right-section">
