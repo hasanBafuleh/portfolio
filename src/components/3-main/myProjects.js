@@ -4,7 +4,7 @@ const descProject2 =
   "Movies Harbor is a React application that offers access to a diverse range of movies. Users can explore a vast collection, search for specific titles, and discover new films. Powered by the OMDB API, Movies Harbor provides comprehensive movie data presented in an intuitive interface.";
 
 const linkProject1 = "https://promptopia-next-js-phi.vercel.app/";
-const linkProject2 = "https://github.com/hasanBafuleh/Promptopia-Next.js?tab=readme-ov-file";
+const linkProject2 = "https://movies-harbor.vercel.app/";
 
 const gitHub1 = "https://github.com/hasanBafuleh/Promptopia-Next.js?tab=readme-ov-file"
 const gitHub2 = "https://github.com/hasanBafuleh/Movies-Harbor-React"
@@ -21,6 +21,7 @@ export const myProjects = [
   {
     projectTitle: "Movies Harbor",
     description: descProject2,
+    link: linkProject2,
     gitHub: gitHub2,
     category: ["React"],
     imgPath: "./Movies Harbor screenshot2.png",
