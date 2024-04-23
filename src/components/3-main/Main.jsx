@@ -77,33 +77,48 @@ function Main() {
                 key={item.imgPath}
                 className="card"
               >
-                <img
-                  width={270}
-                  style={{ padding: "0.2rem" }}
-                  src={item.imgPath}
-                  alt=""
-                />
-                <div style={{ width: "270px" }} className=" box">
-                  <h1 className="title">{item.projectTitle}</h1>
-                  <p className="sub-title">{item.description}</p>
-                  <div className="flex icons">
-                    <div style={{ gap: "0.5rem" }} className="flex source">
-                      <a href={item.link} target="_blank" rel="noopener noreferrer">
-                        <div className="icon-link"></div>
-                      </a>
-                      <a href={item.gitHub} target="_blank" rel="noopener noreferrer">
-                        <div className="icon-github"></div>
+                <a
+                  href={item.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="card-link"
+                >
+                  <img
+                    width={270}
+                    style={{ padding: "0.2rem" }}
+                    src={item.imgPath}
+                    alt=""
+                  />
+                  <div style={{ width: "270px" }} className=" box">
+                    <h1 className="title">{item.projectTitle}</h1>
+                    <p className="sub-title">{item.description}</p>
+                    <div className="flex icons">
+                      <div style={{ gap: "0.5rem" }} className="flex source">
+                        <a
+                          href={item.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <div className="icon-link"></div>
+                        </a>
+                        <a
+                          href={item.gitHub}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <div className="icon-github"></div>
+                        </a>
+                      </div>
+                      <a className="link flex" href={item.link} target="_blank">
+                        more
+                        <span
+                          style={{ alignSelf: "end" }}
+                          className="icon-arrow-right"
+                        ></span>
                       </a>
                     </div>
-                    <a className="link flex" href={item.link} target="_blank">
-                      more
-                      <span
-                        style={{ alignSelf: "end" }}
-                        className="icon-arrow-right"
-                      ></span>
-                    </a>
                   </div>
-                </div>
+                </a>
               </motion.article>
             );
           })}
